@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
     <style>
-        /* Reset and Base Styles */
         * {
             margin: 0;
             padding: 0;
@@ -28,7 +27,6 @@
             padding: 0 24px;
         }
 
-        /* Navigation */
         .navbar {
             position: fixed;
             top: 0;
@@ -89,18 +87,15 @@
             transition: 0.3s;
         }
 
-        /* Hero Section MODIFICATO CON SFONDO */
         .hero {
             min-height: 100vh;
             display: flex;
             align-items: center;
-            /* Inserisci qui il percorso della tua immagine di sfondo */
             background: url('https://iplab.dmi.unict.it/sharing2/SignIT/assets/sfondo.jpg') no-repeat center center/cover;
             position: relative;
             padding-top: 80px;
         }
 
-        /* Overlay scuro per migliorare la leggibilità del testo */
         .hero::before {
             content: '';
             position: absolute;
@@ -108,7 +103,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.5); /* Overlay scuro */
+            background: rgba(0, 0, 0, 0.5); 
             z-index: 1;
         }
 
@@ -117,7 +112,7 @@
             margin: 0 auto;
             padding: 0 24px;
             text-align: center;
-            position: relative; /* Per stare sopra l'overlay */
+            position: relative; 
             z-index: 2;
         }
 
@@ -127,7 +122,7 @@
             margin-bottom: 24px;
             letter-spacing: -2px;
             line-height: 1.1;
-            color: #ffffff; /* Testo bianco */
+            color: #ffffff; 
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
 
@@ -135,16 +130,15 @@
             font-size: 24px;
             font-weight: 600;
             margin-bottom: 32px;
-            color: #f8f9fa; /* Testo chiaro */
+            color: #f8f9fa; 
             letter-spacing: -0.5px;
             text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
         }
 
-        /* Authors Section MODIFICATO PER SFONDO SCURO */
         .authors-section {
             margin: 32px auto;
             padding: 24px;
-            background: rgba(255, 255, 255, 0.9); /* Sfondo chiaro per leggibilità */
+            background: rgba(255, 255, 255, 0.9); 
             border-radius: 16px;
             border-left: 4px solid #004d4d;
             max-width: 900px;
@@ -186,7 +180,7 @@
         .hero-description {
             font-size: 18px;
             margin: 40px auto;
-            color: #e0e0e0; /* Testo chiaro */
+            color: #e0e0e0; 
             line-height: 1.7;
             max-width: 800px;
             text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
@@ -225,7 +219,7 @@
         }
 
         .btn-secondary {
-            background: white; /* Modificato per contrastare con lo sfondo scuro */
+            background: white; 
             color: #004d4d;
             border: 2px solid #004d4d;
         }
@@ -237,7 +231,6 @@
             box-shadow: 0 8px 25px rgba(0, 77, 77, 0.5);
         }
 
-        /* Content Section */
         section {
             padding: 80px 0;
         }
@@ -259,7 +252,6 @@
             background: linear-gradient(135deg, #f8f9fa 0%, #e8f4fd 100%);
         }
 
-        /* Citation Section */
         .citation-content {
             max-width: 800px;
             margin: 0 auto;
@@ -295,7 +287,6 @@
             font-size: 14px;
         }
 
-        /* Team Section styles - NUOVA SEZIONE */
         .team-section {
             padding: 50px 0;
             background-color: #f8f9fa; 
@@ -354,7 +345,6 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
-        /* Footer */
         .footer {
             background: linear-gradient(135deg, #004d4d, #002626);
             color: white;
@@ -388,7 +378,6 @@
             font-size: 14px;
         }
 
-        /* Notification */
         .notification {
             position: fixed;
             top: 20px;
@@ -410,7 +399,6 @@
             transform: translateX(0);
         }
 
-        /* CHART SPECIFIC STYLES */
         
         .chart-main-container {
             max-width: 1400px;
@@ -438,7 +426,7 @@
         .chart-wrapper {
             position: relative;
             max-width: 900px;
-            height: 900px; /* Fixed height required for Chart.js */
+            height: 900px; 
             margin: 0 auto;
             padding: 20px;
         }
@@ -503,7 +491,6 @@
             margin-right: auto;
         }
         
-        /* Responsive */
         @media (max-width: 768px) {
             .hamburger {
                 display: flex;
@@ -534,7 +521,6 @@
                 font-size: 36px;
             }
             
-            /* Chart dimension adjustment for smaller screens */
             .chart-wrapper {
                 height: 500px; 
             }
@@ -912,7 +898,6 @@
                     <strong>Evaluation Metrics:</strong> Performance was measured using accuracy, precision, recall, and F1-score to account for class imbalance.
                 </p>
     
-                <!-- Macro Results -->
                 <div style="text-align: center; margin-top: 40px;">
                     <h3 style="margin-bottom: 15px;">Macro Results</h3>
                     <img src="https://iplab.dmi.unict.it/sharing2/SignIT/assets/macro.png"
@@ -929,8 +914,6 @@
                 </div>
 
 
-    
-                <!-- Micro Results -->
                 <div style="text-align: center; margin-top: 40px;">
                     <h3 style="margin-bottom: 15px;">Micro Results</h3>
                     <img src="https://iplab.dmi.unict.it/sharing2/SignIT/assets/micro.png"
@@ -1014,7 +997,6 @@
     
             </div>
             
-            <!-- Logos Section -->
             <div style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 60px; flex-wrap: wrap;">
                 <img src="https://iplab.dmi.unict.it/sharing2/SignIT/assets/logo1.png" alt="Logo 1" style="max-width: 200px; height: auto;">
                 <img src="https://iplab.dmi.unict.it/sharing2/SignIT/assets/logo2.png" alt="Logo 2" style="max-width: 200px; height: auto;">
@@ -1042,7 +1024,6 @@
     </footer>
 
     <script>
-        // Chart Data (Updated to English)
         const macroData = {
             'Animals': {
                 color: '#3498db',
@@ -1180,7 +1161,6 @@
                                     if (context[0].datasetIndex === 0) {
                                         return 'Macro-Category: ' + macroLabels[context[0].dataIndex];
                                     } else {
-                                        // Show only the class name without macro prefix
                                         return classLabels[context[0].dataIndex];
                                     }
                                 },
@@ -1237,9 +1217,6 @@
             });
         }
 
-        // --- Existing scripts (Mobile, Scrolling, Copy BibTeX) ---
-        
-        // Mobile Navigation Toggle
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('.nav-menu');
 
@@ -1248,13 +1225,11 @@
             navMenu.classList.toggle('active');
         });
 
-        // Close mobile menu when clicking on a link
         document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
         }));
 
-        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1268,7 +1243,6 @@
             });
         });
 
-        // Copy BibTeX functionality
         function copyBibtex() {
             const bibtexElement = document.getElementById('bibtex');
             const bibtexText = bibtexElement.textContent;
@@ -1276,7 +1250,6 @@
             navigator.clipboard.writeText(bibtexText).then(() => {
                 showNotification('BibTeX copied to clipboard!');
             }).catch(() => {
-                // Fallback for older browsers
                 const tempTextarea = document.createElement('textarea');
                 tempTextarea.value = bibtexText;
                 document.body.appendChild(tempTextarea);
@@ -1287,7 +1260,6 @@
             });
         }
 
-        // Notification system
         function showNotification(message) {
             const notification = document.createElement('div');
             notification.className = 'notification';
@@ -1310,7 +1282,6 @@
             }, 3000);
         }
 
-        // Navbar background change on scroll
         window.addEventListener('scroll', () => {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 100) {
@@ -1322,9 +1293,7 @@
             }
         });
         
-        // Initialize Chart and Legend on load
         document.addEventListener('DOMContentLoaded', () => {
-            // Check if the canvas element exists before creating the chart
             if (document.getElementById('multiLevelChart')) {
                 createMultiLevelChart();
             }
